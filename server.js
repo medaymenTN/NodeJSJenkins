@@ -4,5 +4,9 @@ var app = express();
 app.get('/',function(req,res) {
   res.send("Hello World");
 });
+app.get('/message',(req,res)=>{
+
+    res.send("hello jenkins")
+})
 
 app.listen(4000);
